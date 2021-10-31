@@ -4,15 +4,16 @@
 
 **Learn a digraph with matrix-valued edge weight for multi-agent perception.**
 
-<p align="center"><img src='docs/pics/FLAT.png' align="center" height="300px"> </p>
+<p align="center"><img src='img.png' align="center" height="400px"> </p>
 
 [**ArXiv: Learning Distilled Collaboration Graph for Multi-Agent Perception**](https://arxiv.org/abs/2103.15326)        
 
 
 
 ## News
-[2021-10]  Our dataset V2X-Sim 1.0 is availale [here](https://ai4ce.github.io/V2X-Sim/).
-[2021-09]  🔥 DiscoNet is accepted at NeurIPS 2021.
+**[2021-10]**  Our dataset V2X-Sim 1.0 is availale [here](https://ai4ce.github.io/V2X-Sim/).
+
+**[2021-09]**  🔥 DiscoNet is accepted at **NeurIPS 2021**.
 
 ## Abstract
 To promote better performance-bandwidth trade-off for multi-agent perception, we propose a novel \textit{distilled collaboration graph} (DiscoGraph) to model trainable, pose-aware, and adaptive collaboration among agents. Our key novelties lie in two aspects. 
