@@ -11,13 +11,12 @@
 
 
 ## News
-**[2021-10]**  Our dataset V2X-Sim 1.0 is availale [here](https://ai4ce.github.io/V2X-Sim/).
+**[2021-10]**  Our dataset **V2X-Sim 1.0** is availale [here](https://ai4ce.github.io/V2X-Sim/).
 
 **[2021-09]**  🔥 DiscoNet is accepted at **NeurIPS 2021**.
 
 ## Abstract
-To promote better performance-bandwidth trade-off for multi-agent perception, we propose a novel \textit{distilled collaboration graph} (DiscoGraph) to model trainable, pose-aware, and adaptive collaboration among agents. Our key novelties lie in two aspects. 
-First, we propose a teacher-student framework to train DiscoGraph via knowledge distillation. The teacher model employs an early collaboration with holistic-view inputs; the student model is based on intermediate collaboration with single-view inputs. Our framework trains DiscoGraph by constraining post-collaboration feature maps in the student model to match the correspondences in the teacher model. Second, we propose a matrix-valued edge weight in DiscoGraph. In such a matrix, each element reflects the inter-agent attention at a specific spatial region, allowing an agent to adaptively highlight the informative regions. During inference, we only need to use the student model named as the distilled collaboration network (DiscoNet). Attributed to the teacher-student framework, multiple agents with the shared DiscoNet could collaboratively approach the performance of a hypothetical teacher model with a holistic view. Our approach is validated on V2X-Sim $1.0$, a large-scale multi-agent perception dataset that we synthesized using CARLA and SUMO co-simulation. Our quantitative and qualitative experiments in multi-agent 3D object detection show that DiscoNet could not only achieve a better performance-bandwidth trade-off than the state-of-the-art collaborative perception methods, but also bring more straightforward design rationale. Our code is available on https://github.com/ai4ce/DiscoNet.
+To promote better performance-bandwidth trade-off for multi-agent perception, we propose a novel distilled collaboration graph (DiscoGraph) to model trainable, pose-aware, and adaptive collaboration among agents. Our key novelties lie in two aspects. First, we propose a teacher-student framework to train DiscoGraph via knowledge distillation. The teacher model employs an early collaboration with holistic-view inputs; the student model is based on intermediate collaboration with single-view inputs. Our framework trains DiscoGraph by constraining post-collaboration feature maps in the student model to match the correspondences in the teacher model. Second, we propose a matrix-valued edge weight in DiscoGraph. In such a matrix, each element reflects the inter-agent attention at a specific spatial region, allowing an agent to adaptively highlight the informative regions. During inference, we only need to use the student model named as the distilled collaboration network (DiscoNet). Attributed to the teacher-student framework, multiple agents with the shared DiscoNet could collaboratively approach the performance of a hypothetical teacher model with a holistic view. Our approach is validated on V2X-Sim 1.0, a large-scale multi-agent perception dataset that we synthesized using CARLA and SUMO co-simulation. Our quantitative and qualitative experiments in multi-agent 3D object detection show that DiscoNet could not only achieve a better performance-bandwidth trade-off than the state-of-the-art collaborative perception methods, but also bring more straightforward design rationale. Our code is available on https://github.com/ai4ce/DiscoNet.
 
 ## Installation
 For white-box attacks, we use point-based [PointRCNN](https://github.com/sshaoshuai/PointRCNN) as the target detector.  
@@ -132,13 +131,12 @@ output/{SPLIT}/{ATTACK_TYPE}/FLAT_{STAGE}_{TASK}_{NB_ITER}_{ITER_EPS}_{ITER_EPS2
 This project is not possible without these great codebases.
 
 ## Citation
-If you find FLAT useful in your research, please cite:
+If you find V2X-Sim 1.0 or DiscoNet useful in your research, please cite:
 ```
-@InProceedings{Li_2021_ICCV,
-      title = {Fooling LiDAR Perception via Adversarial Trajectory Perturbation},
-      author = {Li, Yiming and Wen, Congcong and Juefei-Xu, Felix and Feng, Chen},
-      booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-      month = {October},
-      year = {2021}
+@InProceedings{Li_2021_NeurIPS,
+    title = {Learning Distilled Collaboration Graph for Multi-Agent Perception},
+    author = {Li, Yiming and Ren, Shunli and Wu, Pengxiang and Chen, Siheng and Feng, Chen and Zhang, Wenjun},
+    booktitle = {Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021)},
+    year = {2021}
 }
 ```
