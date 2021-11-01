@@ -86,6 +86,7 @@ This project is not possible without the following great codebases.
 * [**mmdetection**](https://github.com/open-mmlab/mmdetection)
 * [**nuSenes-devkit**](https://github.com/nutonomy/nuscenes-devkit)
 * [**when2com**](https://github.com/GT-RIPL/MultiAgentPerception)
+* [**V2X-Sim**](https://github.com/ai4ce/V2X-Sim)
 
 ## Citation
 If you find V2X-Sim 1.0 or DiscoNet useful in your research, please cite our paper.
