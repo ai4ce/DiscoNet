@@ -98,10 +98,11 @@ python test_codet.py [--data PATH_TO_DATA] [--bound BOUND] [--com COM] [--resume
                     "v2v/when2com//sum/mean/max/cat/agent" for other methods, '' for early or no collaboration.
 --data PATH_TO_DATA         
                     Set as YOUR_PATH_TO_DATASET/V2X-Sim-1.0-trainval/test
---resume_teacher PATH_TO_TRACHER_MODEL 
-                    The pretrained early-collaboration-based teacher model.
+--resume PATH_TO_YOUR_MODEL 
+                    The trained model for evaluation.
 
 ```
+
 ## Acknowledgment  
 ```flat.py``` is modified from the evaluation code of [PointRCNN](https://github.com/sshaoshuai/PointRCNN), for implementing attacks.  
 ```evaluate.py``` is  borrowed from evaluation code from [Train in Germany, Test in The USA: Making 3D Object Detectors Generalize](https://github.com/cxy1997/3D_adapt_auto_driving), utilizing distance-based difficulty metrics.  
