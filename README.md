@@ -62,7 +62,7 @@ FLAT
 
 ## Training Commands
 ```bash
-python train_codet.py [--data PATH_TO_DATA] [--bound BOUND] [--com COM] [--data PATH_TO_DATA]
+python train_codet.py [--data PATH_TO_DATA] [--bound BOUND] [--com COM]
                [--batch BATCH] [--nepoch NEPOCH] [--lr LEARNING_RATE] 
                [--kd_flag KD_FLAG] [--resume_teacher PATH_TO_TRACHER_MODEL]
 ```
@@ -84,11 +84,24 @@ python train_codet.py [--data PATH_TO_DATA] [--bound BOUND] [--com COM] [--data 
 ```
 All the experiments were performed at the [pretrained model](checkpoint_epoch_70.pth) of PointRCNN as provided.
 
-Detection and evaluation results will be save in 
+## Evaluation Commands
 ```bash
-output/{SPLIT}/{ATTACK_TYPE}/FLAT_{STAGE}_{TASK}_{NB_ITER}_{ITER_EPS}_{ITER_EPS2}
+python test_codet.py [--data PATH_TO_DATA] [--bound BOUND] [--com COM] [--resume PATH_TO_YOUR_MODEL]
 ```
 
+```
+--bound BOUND       
+                    Input data to the collaborative perception model. Options: "lowerbound" for 
+                    no-collaboration or intermediate-collaboration, "upperbound" for early collaboration.
+--com COM   
+                    Intermediate collaboration strategy. Options: "disco" for our DiscoNet,
+                    "v2v/when2com//sum/mean/max/cat/agent" for other methods, '' for early or no collaboration.
+--data PATH_TO_DATA         
+                    Set as YOUR_PATH_TO_DATASET/V2X-Sim-1.0-trainval/test
+--resume_teacher PATH_TO_TRACHER_MODEL 
+                    The pretrained early-collaboration-based teacher model.
+
+```
 ## Acknowledgment  
 ```flat.py``` is modified from the evaluation code of [PointRCNN](https://github.com/sshaoshuai/PointRCNN), for implementing attacks.  
 ```evaluate.py``` is  borrowed from evaluation code from [Train in Germany, Test in The USA: Making 3D Object Detectors Generalize](https://github.com/cxy1997/3D_adapt_auto_driving), utilizing distance-based difficulty metrics.  
