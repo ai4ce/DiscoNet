@@ -6,7 +6,7 @@
 
 <p align="center"><img src='img.png' align="center" height="400px"> </p>
 
-[**ArXiv: Learning Distilled Collaboration Graph for Multi-Agent Perception**](https://arxiv.org/abs/2103.15326)        
+[**ArXiv: Learning Distilled Collaboration Graph for Multi-Agent Perception**]()        
 
 
 
