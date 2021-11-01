@@ -2,7 +2,7 @@
 
 [Yiming Li](https://scholar.google.com/citations?user=i_aajNoAAAAJ), [Shunli Ren](https://github.com/ShunliRen), [Pengxiang Wu](https://scholar.google.com/citations?user=MXLs7GcAAAAJ&hl=en), [Siheng Chen](https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ), [Wenjun Zhang](https://www.researchgate.net/profile/Wenjun-Zhang-29)
 
-**Learn a digraph with matrix-valued edge weight for multi-agent perception.**
+**''Learn a digraph with matrix-valued edge weight for multi-agent perception.''**
 
 <p align="center"><img src='img.png' align="center" height="400px"> </p>
 
@@ -82,9 +82,9 @@ The teacher model can be downloaded [**here**](https://drive.google.com/file/d/1
 
 ## Acknowledgment  
 This project is not possible without the following great codebases.
-* [MotionNet](https://github.com/pxiangwu/MotionNet)
-* [mmdetection](https://github.com/open-mmlab/mmdetection)
-* [nusSenes-devkit](https://github.com/nutonomy/nuscenes-devkit)
+* [**MotionNet**](https://github.com/pxiangwu/MotionNet)
+* [**mmdetection**](https://github.com/open-mmlab/mmdetection)
+* [**nusSenes-devkit**](https://github.com/nutonomy/nuscenes-devkit)
 
 
 ## Citation
