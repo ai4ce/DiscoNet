@@ -85,7 +85,7 @@ This project is not possible without the following great codebases.
 * [**MotionNet**](https://github.com/pxiangwu/MotionNet)
 * [**mmdetection**](https://github.com/open-mmlab/mmdetection)
 * [**nuSenes-devkit**](https://github.com/nutonomy/nuscenes-devkit)
-
+* [**when2com**](https://github.com/GT-RIPL/MultiAgentPerception)
 
 ## Citation
 If you find V2X-Sim 1.0 or DiscoNet useful in your research, please cite our paper.
