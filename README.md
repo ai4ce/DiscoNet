@@ -84,7 +84,7 @@ The teacher model can be downloaded [**here**](https://drive.google.com/file/d/1
 This project is not possible without the following great codebases.
 * [**MotionNet**](https://github.com/pxiangwu/MotionNet)
 * [**mmdetection**](https://github.com/open-mmlab/mmdetection)
-* [**nusenes-devkit**](https://github.com/nutonomy/nuscenes-devkit)
+* [**nuSenes-devkit**](https://github.com/nutonomy/nuscenes-devkit)
 
 
 ## Citation
