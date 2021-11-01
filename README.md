@@ -19,11 +19,6 @@
 To promote better performance-bandwidth trade-off for multi-agent perception, we propose a novel distilled collaboration graph (DiscoGraph) to model trainable, pose-aware, and adaptive collaboration among agents. Our key novelties lie in two aspects. First, we propose a teacher-student framework to train DiscoGraph via knowledge distillation. The teacher model employs an early collaboration with holistic-view inputs; the student model is based on intermediate collaboration with single-view inputs. Our framework trains DiscoGraph by constraining post-collaboration feature maps in the student model to match the correspondences in the teacher model. Second, we propose a matrix-valued edge weight in DiscoGraph. In such a matrix, each element reflects the inter-agent attention at a specific spatial region, allowing an agent to adaptively highlight the informative regions. During inference, we only need to use the student model named as the distilled collaboration network (DiscoNet). Attributed to the teacher-student framework, multiple agents with the shared DiscoNet could collaboratively approach the performance of a hypothetical teacher model with a holistic view. Our approach is validated on V2X-Sim 1.0, a large-scale multi-agent perception dataset that we synthesized using CARLA and SUMO co-simulation. Our quantitative and qualitative experiments in multi-agent 3D object detection show that DiscoNet could not only achieve a better performance-bandwidth trade-off than the state-of-the-art collaborative perception methods, but also bring more straightforward design rationale. Our code is available on https://github.com/ai4ce/DiscoNet.
 
 ## Installation
-For white-box attacks, we use point-based [PointRCNN](https://github.com/sshaoshuai/PointRCNN) as the target detector.  
-```point_rcnn.py``` ```rcnn_net.py``` ```rpn.py``` in ```PointRCNN/lib/net``` were modified for introducing attacks.   
-```kitti_dataset.py``` ```kitti_rcnn_dataset.py```  in ```PointRCNN/lib/datasets``` were modified for loading our customized nusc_kitti dataset.   
-  
-The rest code of PointRCNN is left untouched.
 ### Requirements
 * Linux (tested on Ubuntu 20.04)
 * Python 3.7
@@ -37,28 +32,9 @@ conda activate disco
 ```
 
 ## Dataset Preparation
-Please download the official [nuscenes dataset](https://www.nuscenes.org/nuscenes)(v1.0-trainval)
+Please download the generated dataset [V2X-Sim-1.0-trainval](https://drive.google.com/file/d/11lyIaOeNMCpJkZDOydxqGBNoHiTxTgZk/view?usp=sharing).
 
-Use ```nusc_to_kitti.py``` to generate the dataset.
-
-```bash
-python nusc_to_kitti.py nuscenes_gt_to_kitti [--dataroot "Your nuscenes dataroot"]
-```
-
-It will generate the dataset in the structure as follows.
-```
-FLAT
-├── dataset
-│   ├── nusc_kitti
-│   │   ├──val_1000
-│   │   │   ├──image_2
-│   │   │   ├──ImageSets
-│   │   │   ├──label_2
-│   │   │   ├──pose
-│   │   │   ├──velodyne
-```
-
-**NOTICE**: This script converts the first 1000(of 6019 in total) samples from orginal validation split of v1.0-trainval at default. You can use all of the nuscenes samples, and shuffle option is also provided.
+**NOTICE**: This training/val data generation script is currently not avaliable, you can either use the raw data on [**V2X-Sim 1.0**](https://ai4ce.github.io/V2X-Sim/) or the provided [training/val set](https://drive.google.com/file/d/11lyIaOeNMCpJkZDOydxqGBNoHiTxTgZk/view?usp=sharing).
 
 ## Training Commands
 ```bash
