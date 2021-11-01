@@ -64,32 +64,23 @@ FLAT
 ```bash
 python train_codet.py [--data PATH_TO_DATA] [--bound BOUND] [--com COM] [--data PATH_TO_DATA]
                [--batch BATCH] [--nepoch NEPOCH] [--lr LEARNING_RATE] 
-               [--kd_flag KD_FLAG] [--resume_teacher PATH_TO_TRACHER] [--poly]
+               [--kd_flag KD_FLAG] [--resume_teacher PATH_TO_TRACHER_MODEL]
 ```
 
 ```
 --bound BOUND       
                     Input data to the collaborative perception model. Options: "lowerbound" for 
-                    no-collaboration or intermediate-collaboration, "upperbound" for early collaboration
---nb_iter NB_ITER   
-                    Number of attack iterations in PGD
---task TASK         
-                    Task of attacking. Options: "cls" for classification,
-                    "reg" for regression
---attack_type ATTACK_TYPE
-                    Specify attack type. Options: "all", "translation",
-                    "rotation"
---iter_eps ITER_EPS 
-                    Primary PGD attack step size for each iteration, in
-                    translation only/rotation only attacks, this parameter
-                    is used.
---iter_eps2 ITER_EPS2
-                    Secondary PGD attack step size for each iteration,
-                    only effective when attack_type is "all" and poly mode
-                    is disabled.
---poly              
-                    Polynomial trajectory perturbation option. Notice: if
-                    true, attack_type will be fixed(translation)
+                    no-collaboration or intermediate-collaboration, "upperbound" for early collaboration.
+--com COM   
+                    Intermediate collaboration strategy. Options: "disco" for our DiscoNet,
+                    "v2v/when2com//sum/mean/max/cat/agent" for other methods, '' for early or no collaboration.
+--data PATH_TO_DATA         
+                    Set as YOUR_PATH_TO_DATASET/V2X-Sim-1.0-trainval/train
+--kd_flag FLAG
+                    Whether to use knowledge distillation. 1 for true and 0 for false.
+--resume_teacher PATH_TO_TRACHER_MODEL 
+                    The pretrained early-collaboration-based teacher model.
+
 ```
 All the experiments were performed at the [pretrained model](checkpoint_epoch_70.pth) of PointRCNN as provided.
 
