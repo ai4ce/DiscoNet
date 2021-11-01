@@ -60,19 +60,17 @@ FLAT
 
 **NOTICE**: This script converts the first 1000(of 6019 in total) samples from orginal validation split of v1.0-trainval at default. You can use all of the nuscenes samples, and shuffle option is also provided.
 
-## Run FLAT on Evaluation
+## Training Commands
 ```bash
-python flat.py [--stage STAGE] [--nb_iter NB_ITER]
-               [--task TASK] [--attack_type ATTACK_TYPE] 
-               [--iter_eps ITER_EPS] [--iter_eps2 ITER_EPS2] [--poly]
+python train_codet.py [--data PATH_TO_DATA] [--bound BOUND] [--com COM] [--data PATH_TO_DATA]
+               [--batch BATCH] [--nepoch NEPOCH] [--lr LEARNING_RATE] 
+               [--kd_flag KD_FLAG] [--resume_teacher PATH_TO_TRACHER] [--poly]
 ```
 
 ```
---split SPLIT       
-                    The data split for evaluation
---stage STAGE       
-                    Attack stage of Point RCNN. Options: "1" for RPN
-                    stage, "2" for RCNN stage
+--bound BOUND       
+                    Input data to the collaborative perception model. Options: "lowerbound" for 
+                    no-collaboration or intermediate-collaboration, "upperbound" for early collaboration
 --nb_iter NB_ITER   
                     Number of attack iterations in PGD
 --task TASK         
