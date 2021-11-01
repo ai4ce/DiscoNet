@@ -32,9 +32,9 @@ conda activate disco
 ```
 
 ## Dataset Preparation
-Please download the generated dataset [V2X-Sim-1.0-trainval](https://drive.google.com/file/d/11lyIaOeNMCpJkZDOydxqGBNoHiTxTgZk/view?usp=sharing).
+Please download the training/val set [V2X-Sim-1.0-trainval](https://drive.google.com/file/d/11lyIaOeNMCpJkZDOydxqGBNoHiTxTgZk/view?usp=sharing).
 
-**NOTICE**: This training/val data generation script is currently not avaliable, you can either use the raw data on [**V2X-Sim 1.0**](https://ai4ce.github.io/V2X-Sim/) or the provided [training/val set](https://drive.google.com/file/d/11lyIaOeNMCpJkZDOydxqGBNoHiTxTgZk/view?usp=sharing).
+**NOTICE**: The training/val data generation script is currently not avaliable, you can either use the raw data on [**V2X-Sim 1.0**](https://ai4ce.github.io/V2X-Sim/) or the provided [training/val set](https://drive.google.com/file/d/11lyIaOeNMCpJkZDOydxqGBNoHiTxTgZk/view?usp=sharing) in your experiments. Please send us an access request with your affiliation and role, and we will grant the access.
 
 ## Training Commands
 ```bash
@@ -58,7 +58,6 @@ python train_codet.py [--data PATH_TO_DATA] [--bound BOUND] [--com COM]
                     The pretrained early-collaboration-based teacher model.
 
 ```
-All the experiments were performed at the [pretrained model](checkpoint_epoch_70.pth) of PointRCNN as provided.
 
 ## Evaluation Commands
 ```bash
@@ -79,15 +78,14 @@ python test_codet.py [--data PATH_TO_DATA] [--bound BOUND] [--com COM] [--resume
 
 ```
 
+The teacher model can be downloaded [here](https://drive.google.com/file/d/13JhhlQyEEnuyI8g-Kahq3qWZH2kCbJKV/view?usp=sharing), and our DiscoNet model can can be downloaded [here](https://drive.google.com/file/d/1X6cEmfuRIoaDpCkG9sDUqcB7uUi3ATfc/view?usp=sharing).
+
 ## Acknowledgment  
-```flat.py``` is modified from the evaluation code of [PointRCNN](https://github.com/sshaoshuai/PointRCNN), for implementing attacks.  
-```evaluate.py``` is  borrowed from evaluation code from [Train in Germany, Test in The USA: Making 3D Object Detectors Generalize](https://github.com/cxy1997/3D_adapt_auto_driving), utilizing distance-based difficulty metrics.  
-```nusc_to_kitti.py``` is  modified from official [nuscenes-devkit script](https://github.com/nutonomy/nuscenes-devkit/blob/master/python-sdk/nuscenes/scripts/export_kitti.py) to generate kitti-format nuscenes dataset with ego pose for interpolation.  
-* [PointRCNN](https://github.com/sshaoshuai/PointRCNN)
-* [3D_adapt_auto_driving](https://github.com/cxy1997/3D_adapt_auto_driving)
+This project is not possible without the following great codebases.
+* [MotionNet](https://github.com/pxiangwu/MotionNet)
+* [mmdetection](https://github.com/open-mmlab/mmdetection)
 * [nusSenes-devkit](https://github.com/nutonomy/nuscenes-devkit)
 
-This project is not possible without these great codebases.
 
 ## Citation
 If you find V2X-Sim 1.0 or DiscoNet useful in your research, please cite:
