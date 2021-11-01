@@ -6,7 +6,7 @@
 
 <p align="center"><img src='img.png' align="center" height="400px"> </p>
 
-[**ArXiv: Learning Distilled Collaboration Graph for Multi-Agent Perception**]()(Available in three days.)       
+[**ArXiv: Learning Distilled Collaboration Graph for Multi-Agent Perception**]() (Available in three days)       
 
 
 
@@ -84,7 +84,7 @@ The teacher model can be downloaded [**here**](https://drive.google.com/file/d/1
 This project is not possible without the following great codebases.
 * [**MotionNet**](https://github.com/pxiangwu/MotionNet)
 * [**mmdetection**](https://github.com/open-mmlab/mmdetection)
-* [**nuSenes-devkit**](https://github.com/nutonomy/nuscenes-devkit)
+* [**nusenes-devkit**](https://github.com/nutonomy/nuscenes-devkit)
 
 
 ## Citation
