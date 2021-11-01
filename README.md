@@ -25,35 +25,15 @@ For white-box attacks, we use point-based [PointRCNN](https://github.com/sshaosh
   
 The rest code of PointRCNN is left untouched.
 ### Requirements
-* Linux (tested on Ubuntu 18.04)
-* Python 3.6
-* PyTorch 1.2.0
-* CUDA 10.0
-
-
+* Linux (tested on Ubuntu 20.04)
+* Python 3.7
+* PyTorch 1.8.0
+* CUDA 11.2
 
 ### Create Anaconda Environment
 ```bash
-conda create -n flat python=3.6
-conda activate flat
-```
-
-### CUDA
-```bash
-export PATH=/usr/local/cuda-10.0/bin:$PATH
-export CUDA_PATH=/usr/local/cuda-10.0
-export CUDA_HOME=/usr/local/cuda-10.0
-export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH
-```
-### Install dependencies
-```bash
-git clone https://github.com/ai4ce/FLAT.git
-cd FLAT
-pip install -r requirements.txt
-pip install torch==1.2.0 torchvision==0.4.0
-cd PointRCNN
-sh build_and_install.sh
-cd ..
+conda env create -f disco.yaml
+conda activate disco
 ```
 
 ## Dataset Preparation
