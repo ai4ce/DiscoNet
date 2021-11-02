@@ -2,14 +2,14 @@
 
 [Yiming Li](https://scholar.google.com/citations?user=i_aajNoAAAAJ), [Shunli Ren](https://github.com/ShunliRen), [Pengxiang Wu](https://scholar.google.com/citations?user=MXLs7GcAAAAJ&hl=en), [Siheng Chen](https://scholar.google.com/citations?user=W_Q33RMAAAAJ&hl=en), [Chen Feng](https://scholar.google.com/citations?user=YeG8ZM0AAAAJ), [Wenjun Zhang](https://www.researchgate.net/profile/Wenjun-Zhang-29)
 
+
+[**ArXiv: Learning Distilled Collaboration Graph for Multi-Agent Perception**](https://arxiv.org/pdf/2111.00643.pdf)   
+
 **''Learn a digraph with matrix-valued edge weight for multi-agent perception.''**
 
 <p align="center"><img src='img.png' align="center" height="400px"> </p>
-
-[**ArXiv: Learning Distilled Collaboration Graph for Multi-Agent Perception**](https://arxiv.org/pdf/2111.00643.pdf)     
-
-
-
+  
+  
 ## News
 **[2021-10]**  Our dataset **V2X-Sim 1.0** is availale [here](https://ai4ce.github.io/V2X-Sim/).
 
