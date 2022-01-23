@@ -48,7 +48,7 @@ python train_codet.py [--data PATH_TO_DATA] [--bound BOUND] [--com COM]
                     no-collaboration or intermediate-collaboration, "upperbound" for early collaboration.
 --com COM   
                     Intermediate collaboration strategy. Options: "disco" for our DiscoNet,
-                    "v2v/when2com//sum/mean/max/cat/agent" for other methods, '' for early or no collaboration.
+                    "v2v/when2com/sum/mean/max/cat/agent" for other methods, '' for early or no collaboration.
 --data PATH_TO_DATA         
                     Set as YOUR_PATH_TO_DATASET/V2X-Sim-1.0-trainval/train
 --kd_flag FLAG
@@ -69,7 +69,7 @@ python test_codet.py [--data PATH_TO_DATA] [--bound BOUND] [--com COM] [--resume
                     no-collaboration or intermediate-collaboration, "upperbound" for early collaboration.
 --com COM   
                     Intermediate collaboration strategy. Options: "disco" for our DiscoNet,
-                    "v2v/when2com//sum/mean/max/cat/agent" for other methods, '' for early or no collaboration.
+                    "v2v/when2com/sum/mean/max/cat/agent" for other methods, '' for early or no collaboration.
 --data PATH_TO_DATA         
                     Set as YOUR_PATH_TO_DATASET/V2X-Sim-1.0-trainval/test
 --resume PATH_TO_YOUR_MODEL 
