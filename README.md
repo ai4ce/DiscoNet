@@ -8,9 +8,9 @@
   
   
 ## News
-**[2021-11]**  Our paper is availale on [arxiv](https://arxiv.org/pdf/2111.00643.pdf).
+**[2021-11]**  Our paper is available on [arxiv](https://arxiv.org/pdf/2111.00643.pdf).
 
-**[2021-10]**  Our dataset **V2X-Sim 1.0** is availale [here](https://ai4ce.github.io/V2X-Sim/).
+**[2021-10]**  Our dataset **V2X-Sim 1.0** is available [here](https://ai4ce.github.io/V2X-Sim/).
 
 **[2021-09]**  🔥 DiscoNet is accepted at **NeurIPS 2021**.
 
