@@ -6,7 +6,12 @@
 
 <p align="center"><img src='img.png' align="center" height="400px"> </p>
   
-  
+[![Documentation Status](https://readthedocs.org/projects/coperception/badge/?version=latest)](https://coperception.readthedocs.io/en/latest/?badge=latest)
+![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=PyTorch&logoColor=white)
+[![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
+[![GitLab issues total](https://badgen.net/github/issues/ai4ce/DiscoNet)](https://gitlab.com/ai4ce/V2X-Sim/issues)
+[![GitHub stars](https://img.shields.io/github/stars/ai4ce/DiscoNet.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/ai4ce/V2X-Sim/stargazers/)
+
 ## News
 **[2022-07]**  We updated the codebase to [coperception library](https://github.com/coperception/coperception) and dataset to [V2X-Sim 2.0](https://ai4ce.github.io/V2X-Sim). New tasks including segmentation and tracking are included.
 
