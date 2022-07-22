@@ -30,7 +30,8 @@ Installation:
 - [Installation documentations](https://coperception.readthedocs.io/en/latest/getting_started/installation/)
 
 Download dataset:
-- [V2X-Sim](https://coperception.readthedocs.io/en/latest/datasets/v2x_sim/)
+- Original dataset (you are going to parse this dataset yourself with `create_data.py` scripts for specific tasks): [Google Drive (US)](https://drive.google.com/drive/folders/1nVmY7g_kprOX-I0Bqsiz6-zdJM-UXFXa)  
+- Parsed datasets for detection and segmentation tasks and model checkpoints: [Google Drive (US)](https://drive.google.com/drive/folders/1NMag-yZSflhNw4y22i8CHTX5l8KDXnNd?usp=sharing)   
 
 How to create datasets & run tasks:
 - [Detection](https://coperception.readthedocs.io/en/latest/tools/det/)
