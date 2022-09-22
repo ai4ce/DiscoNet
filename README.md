@@ -121,7 +121,7 @@ If you find V2X-Sim 1.0 or DiscoNet useful in your research, please cite our pap
 @article{Li_2021_RAL,
     title = {V2X-Sim: Multi-Agent Collaborative Perception Dataset and Benchmark for Autonomous Driving},
     author = {Li, Yiming and Ma, Dekun and An, Ziyan and Wang, Zixun and Zhong, Yiqi and Chen, Siheng and Feng, Chen},
-    booktitle = {IEEE Robotics and Automation Letters},
+    journal = {IEEE Robotics and Automation Letters},
     year = {2022}
 }
 ```
